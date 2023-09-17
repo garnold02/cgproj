@@ -148,7 +148,7 @@ void GLAPIENTRY SDL_GLDebugMessageCallback(GLenum source, GLenum type, GLuint id
         (severity != GL_DEBUG_SEVERITY_NOTIFICATION ? SDL_LOG_PRIORITY_ERROR : SDL_LOG_PRIORITY_INFO),
         "OpenGL debug message [%d], type: %s, severity: %s, source: %s, message:\n%s\n\n",
         id, _type, _severity, _source, msg);
-    
+
 
     // Add __debugbreak if _DEBUG is defined (automatic in visual studio)
     // note: __debugbreak is specific for MSVC, won't work with gcc/clang
@@ -160,7 +160,7 @@ void GLAPIENTRY SDL_GLDebugMessageCallback(GLenum source, GLenum type, GLuint id
     //     (a nyíl a hibát jelző utasítást követő sorra mutat!).
     // 3. A program innen folytatható (zöld háromszög - Continue / F5)
     //     vagy megállítható (piros négyzet - Stop / Shift + F5).
-    if (severity != GL_DEBUG_SEVERITY_NOTIFICATION) 
+    if (severity != GL_DEBUG_SEVERITY_NOTIFICATION)
         __debugbreak();
 #endif
 }

@@ -47,9 +47,9 @@ void CMyApp::Clean()
 {
 }
 
-void CMyApp::Update( const SUpdateInfo& updateInfo )
+void CMyApp::Update(const SUpdateInfo& updateInfo)
 {
-	
+
 }
 
 void CMyApp::Render()
@@ -71,7 +71,7 @@ void CMyApp::RenderGUI()
 // https://wiki.libsdl.org/SDL2/SDL_Keymod
 
 void CMyApp::KeyboardDown(const SDL_KeyboardEvent& key)
-{	
+{
 }
 
 void CMyApp::KeyboardUp(const SDL_KeyboardEvent& key)
