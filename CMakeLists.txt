@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.27)
 project(cgproj)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 file(GLOB CGMAIN_SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp)
 set(CGMAIN_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src)
 
